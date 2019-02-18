@@ -1,0 +1,17 @@
+def name
+node
+{
+    stage('Checkout')
+    {
+        name = "catie"
+        echo "second name is ${name}"
+        def func = returnmessage(name)
+        echo "${func}"
+    }
+}
+def returnmessage(String name)
+{
+    def name1 = "john has relate with ${name}"
+    echo "third name is ${name1}"
+    return name1
+}
