@@ -1,0 +1,17 @@
+def name;
+node
+{
+    stage('Checkout')
+    {
+        echo "first name initialise"
+        name = "catie"
+        echo "second name is ${name}"
+        returnmessage()
+    }
+}
+def returnmessage()
+{
+    name = "john"
+    echo "third name is ${name}"
+    
+}
